@@ -1,20 +1,20 @@
 package com.tchepannou.event.client.v1;
 
-import org.hibernate.validator.constraints.NotEmpty;
-
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.util.Collection;
 import java.util.HashSet;
 
 public class SearchRequest {
     //-- Attributes
-    @NotEmpty(message = "calendar_id_missing")
     private Collection<Long> calendarIds = new HashSet<>();
 
     @NotNull (message = "start_date_missing")
+    @Pattern(regexp = "[0-9]*/[0-9]*/[0-9]*", message = "start_date_format")
     private String startDate;
 
     @NotNull (message = "end_date_missing")
+    @Pattern(regexp = "[0-9]*/[0-9]*/[0-9]*", message = "end_date_format")
     private String endDate;
 
     private int limit = 30;
