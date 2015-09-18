@@ -15,6 +15,8 @@ public class EventResponse {
     private Boolean requireRsvp;
     private Date created;
     private Date updated;
+    private AddressResponse address;
+    private LocationResponse location;
 
     public long getId() {
         return id;
@@ -110,5 +112,21 @@ public class EventResponse {
 
     public void setUpdated(Date updated) {
         this.updated = updated;
+    }
+
+    public AddressResponse getAddress() {
+        return address;
+    }
+
+    public void setAddress(AddressResponse address) {
+        this.address = address;
+    }
+
+    public LocationResponse getLocation() {
+        return location;
+    }
+
+    public void setLocation(LocationResponse location) {
+        this.location = location;
     }
 }
