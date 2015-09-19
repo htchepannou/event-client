@@ -16,7 +16,7 @@ public class EventResponse {
     private Date created;
     private Date updated;
     private AddressResponse address;
-    private LocationResponse location;
+    private PlaceResponse place;
 
     public long getId() {
         return id;
@@ -122,11 +122,11 @@ public class EventResponse {
         this.address = address;
     }
 
-    public LocationResponse getLocation() {
-        return location;
+    public PlaceResponse getPlace() {
+        return place;
     }
 
-    public void setLocation(LocationResponse location) {
-        this.location = location;
+    public void setPlace(PlaceResponse place) {
+        this.place = place;
     }
 }

@@ -1,6 +1,6 @@
 package com.tchepannou.event.client.v1;
 
-public class LocationResponse {
+public class PlaceResponse {
     private long id;
     private String name;
     private String website;
