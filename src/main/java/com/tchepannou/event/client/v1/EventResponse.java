@@ -17,6 +17,7 @@ public class EventResponse {
     private Date updated;
     private AddressResponse address;
     private PlaceResponse place;
+    private GameResponse game;
 
     public long getId() {
         return id;
@@ -128,5 +129,13 @@ public class EventResponse {
 
     public void setPlace(PlaceResponse place) {
         this.place = place;
+    }
+
+    public GameResponse getGame() {
+        return game;
+    }
+
+    public void setGame(GameResponse game) {
+        this.game = game;
     }
 }
